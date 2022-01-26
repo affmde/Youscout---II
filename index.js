@@ -12,8 +12,8 @@ require("dotenv").config();
 
 app.use(express.json());
 app.use(cors());
-const mongo_db = process.env.MONGODB_key
-mongoose.connect(mongo_db ||"mongodb+srv://affmde:Andremiranda1@affm.795qg.mongodb.net/youscout?retryWrites=true&w=majority");
+
+mongoose.connect(MONGODB_CONNECTION_STRING);
 
 app.get("/getUsers", (req, res)=>{
     UsersModel.find({}, (err, result)=>{
@@ -163,8 +163,8 @@ app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 
-const port = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
-app.listen(port, ()=>{
+app.listen(PORT, ()=>{
     console.log('Server is running on port 3001')
 })

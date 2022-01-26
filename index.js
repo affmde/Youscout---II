@@ -7,10 +7,7 @@ const PlayerReportModel = require('./modules/playerReport');
 const ScheduleModel= require('./modules/schedule');
 const jwt= require('jsonwebtoken');
 const path = require("path");
-require("dotenv").config()
-
-let youscoutRoute = express();
-app.use("/youscout", youscoutRoute)
+require("dotenv").config();
 
 
 app.use(express.json());
@@ -40,7 +37,7 @@ app.get("/getUserId/:username", (req, res)=>{
     })
 })
 
-youscoutRoute.route("/login").post(async (req, res)=>{
+app.post("/login", async (req, res)=>{
     const user = await UsersModel.findOne({
         username: req.body.username,
         password: req.body.password

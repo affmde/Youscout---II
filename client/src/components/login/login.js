@@ -18,7 +18,7 @@ export const Login = ({show, setShow, setIsLoggedIn}) =>{
         e.preventDefault();
         let cancel = false;
 
-        Axios.post("/login", {
+        Axios.post("http://localhost:3001/login", {
             username,
             password
         }).then(res=>{

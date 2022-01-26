@@ -13,7 +13,7 @@ require("dotenv").config();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect(MONGODB_CONNECTION_STRING);
+mongoose.connect(process.env.MONGODB_CONNECTION_STRING);
 
 app.get("/getUsers", (req, res)=>{
     UsersModel.find({}, (err, result)=>{

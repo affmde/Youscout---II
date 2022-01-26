@@ -7,7 +7,7 @@
 .homepage-body::after{
     content: "";
     opacity: 0.85;
-    background: #5222ff77 url("C:\Users\affmd\OneDrive\Área de Trabalho\Youscout\client\src\media\images\izuddin-helmi-adnan-K5ChxJaheKI-unsplash.jpg") no-repeat fixed top;
+    background: #5222ff77 url("https://ibb.co/PtCJW1Z") no-repeat fixed top;
     background-blend-mode: luminosity;
     background-size: cover;
     background-position: center;

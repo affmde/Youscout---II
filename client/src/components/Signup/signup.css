@@ -1,0 +1,146 @@
+.signup-container{
+    height: 650px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    /*margin-left: 10%;
+    border: 10px solid black;*/
+}
+
+.signup-header{
+    height: 60px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-div{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.box > label{
+    margin-top:10px;
+    margin-right: 3px;
+}
+
+
+.box{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.bottom-div{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.box input{
+    width: 80%;
+}
+
+
+#terms-box{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#term-line-box{
+    display: block;
+}  
+
+#agreeTerms{
+    position: relative;
+    left: 0px;
+}
+
+#term-line{
+    color: black;
+    font-size: 0.8rem;
+    margin: 0;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    
+}
+.signupBtn{
+    width: 40%;
+    padding: 10px 0px;
+    display: inline-block;
+    background-color: orangered;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.signupBtn:hover{
+    font-weight: bolder;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#signup-clear{
+    background-color: rgba(212, 208, 208, 0.918);
+}
+
+.box span{
+    color: red;
+}
+
+.signup-footer{
+    text-align: center;
+}
+
+#password-warning{
+    height: 16px;
+}
+
+.passwords{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.correctPassword{
+    height: 15px;
+    margin: 0;
+}
+
+#confirm-password-register-img, #password-register-img{
+    display: none;
+}
+
+
+#wrong-password-message{
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.377);
+    width: 81%;
+    margin-top: 5px;
+    height: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#wrong-password-message p{
+    margin-left: 30px;
+    font-weight: bold;
+}
+

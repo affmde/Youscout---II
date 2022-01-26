@@ -1,0 +1,16 @@
+.editTd-container{
+    width: 50%;
+    background-color: rgba(255, 254, 254, 0.938);
+    margin-left:25%;
+    margin-right: 25%;
+    margin-top:15px;
+    padding: 20px 30px;
+    position: absolute;
+    bottom: 10%;
+    box-shadow: 10px 5px 50px 50px black;
+}
+
+.editTd-container form > *{
+    margin-top: 25px;
+}
+

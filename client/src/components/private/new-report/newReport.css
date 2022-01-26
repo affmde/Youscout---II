@@ -1,0 +1,61 @@
+.new-report-container{
+    background-color: rgb(238, 235, 235);
+    padding: 50px;
+}
+
+.raw{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.raw-6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.raw-6 textarea{
+    width:300px;
+    height: 200px;
+}
+.nr-box{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 20px;
+}
+
+.nr-box > *{
+    margin-top: 10px;
+}
+
+.raw-1 input{
+    width: 100%;
+}
+
+.nr-textArea{
+    height: 400px;
+    background-color: #f3f3f3;
+}
+
+.recommendation{
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.nr-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.nr-buttons button{
+    padding: 10px 30px;
+    margin-left: 30px;
+}

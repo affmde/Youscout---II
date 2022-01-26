@@ -1,0 +1,67 @@
+.td-container{
+    display: flex;
+}
+
+.todo-container{
+    width: 70%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 15px;
+    margin-left: 30px;
+    background-color: rgb(202, 195, 195);
+    box-shadow: 5px 5px 5px 5px black ;
+}
+
+.todo-container p{
+    font-size: 1rem;
+    color: rgb(43, 41, 41);
+}
+
+.match-details{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.match-details > *{
+    margin-right: 30px;
+    text-align: center;
+}
+
+#vs{
+    padding-top: 10px;
+}
+
+#removeTd{
+    height: 50%;
+    padding-top: 60%;
+}
+
+
+#editTd{
+    padding-top: 80%;
+    height: 30px;
+    margin-left: 20px;
+}
+
+#removeTd:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+#editTd:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+#home-team, #away-team{
+    font-size: 1.5rem;
+    font-weight: bold;
+}

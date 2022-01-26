@@ -1,0 +1,10 @@
+.about-container{
+    height: 650px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}

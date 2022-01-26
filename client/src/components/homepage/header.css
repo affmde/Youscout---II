@@ -1,0 +1,43 @@
+.header-container{
+    z-index: 1;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information h3{
+    padding: 10px;
+    position: relative;
+    right: 100px;
+}
+
+.information h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+img{
+    height: 100px;
+    position: relative;
+    left: 20px;
+}
+
+#login{
+    border-radius: 10%;
+    background-color: #ff5722;
+}
+
+.Link{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}

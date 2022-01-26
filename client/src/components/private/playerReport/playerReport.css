@@ -1,0 +1,65 @@
+.player-report-container{
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+    z-index: 1;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 20px 20px 100px 15px black;
+    background-color: rgb(212, 209, 209);
+    overflow: scroll;
+    height: 650px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#close-report{
+    height: 30px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+#close-report:hover{
+    transform: scale(1.1);
+}
+
+.report-header{
+    margin-left: 90%;
+}
+
+#report-name{
+    font-size: 4rem;
+    color: rgb(221, 129, 24);
+    margin: 10px;
+    text-align: center;
+}
+
+.player-report-container p, .pl-details{
+    color: rgba(46, 44, 44, 0.884);
+    font-size: 0.8rem;
+}
+
+.player-report-container label{
+    font-size: 1.2rem;
+    font-style: italic;
+    color: orangered;
+}
+
+.player-report-container h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(56, 40, 20);
+}
+
+.player-report-container h3{
+    font-size: 1.85rem;
+    font-size: bold;
+    color: black;
+}
+
+#report-rec{
+    color:rgb(221, 129, 24);
+    text-align: center;
+    font-size: 3rem;
+}

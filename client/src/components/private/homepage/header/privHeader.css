@@ -1,0 +1,64 @@
+.privateHomepage-container{
+    height: 80px;
+    font-size: 2rem;
+}
+.privateHomepage-container::after{
+    content: "";
+    opacity: 0.85;
+    background: #2e2938e3 url("C:\Users\affmd\OneDrive\Área de Trabalho\Youscout\client\src\media\images\izuddin-helmi-adnan-K5ChxJaheKI-unsplash.jpg") no-repeat fixed top;
+    background-blend-mode: luminosity;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    height: 800px;
+    
+}
+
+.priv-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: chocolate;
+    background-color: rgba(255, 255, 255, 0.808);
+    font-size: 1.5rem;
+}
+
+.priv-header img{
+    height: 50px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header-right > *{
+    margin-left: 80px;
+}
+
+
+.header-right img{
+    height: 50%;
+}
+
+#app-logout{
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(233, 233, 230);
+    background-color: orangered;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+#app-logout:hover{
+    color: orangered;
+    background-color: #2e2938e3;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-weight: bold;
+}

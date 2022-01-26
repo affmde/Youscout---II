@@ -1,0 +1,26 @@
+.navlink{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 25px;
+    position: relative;
+    padding-right: 80px;
+    background-color: rgba(15, 14, 14, 0.945);
+}
+
+.navlink-link{
+    padding-left: 200px;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-style: italic;
+}
+.navlink-link:hover{
+    transform: scale(1.05);
+    font-weight: bold;
+    font-style: normal;
+    color: orangered;
+}
+
+

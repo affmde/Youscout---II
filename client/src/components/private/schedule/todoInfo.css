@@ -1,0 +1,21 @@
+.newTodo-container{
+    width: 50%;
+    background-color: rgba(255, 254, 254, 0.938);
+    margin-left:25%;
+    margin-right: 25%;
+    margin-top:15px;
+    padding: 20px 30px;
+}
+
+.match-teams{
+    display: flex;
+}
+
+#vsForm{
+    margin: 0px 20px;
+}
+
+.newTodo-container form > *{
+    margin-top: 25px;
+}
+

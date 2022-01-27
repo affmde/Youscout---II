@@ -4,6 +4,7 @@ import Axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import warning from '../../media/images/warning-2-16.png'
 import correctPassword from '../../media/images/correct-password.png';
+import { TermsConditions } from "./terms-conditions";
 
 
 export const SignUp = ({signUp, setSignUp, show}) =>{
@@ -28,6 +29,7 @@ export const SignUp = ({signUp, setSignUp, show}) =>{
         companyCountry:"",
     })
     const [disableButton, setDisableButton] = useState(true)
+    const [showTerms, setShowTerms] = useState(false)
 
     function updateForm(value) {
         return setForm((prev) => {
@@ -550,7 +552,7 @@ export const SignUp = ({signUp, setSignUp, show}) =>{
                         <div className="terms box" id="terms-box">
                             <div id="term-line-box">
                             <span>*</span> All elements with this symbol are required to fullfil before submit the registration form.
-                                <p id="term-line">I confirm that i read and agree with the <a href="#">terms and conditions</a>.</p>
+                                <p id="term-line">I confirm that i read and agree with the <span id="termns-conditions" onClick={()=>setShowTerms(true)}>terms and conditions</span>.</p>
                                 <input type="checkbox" value="agreeTerms" name="agreeTerms" id="agreeTerms" required></input>
                             </div>
                             <div className="btns">
@@ -564,6 +566,7 @@ export const SignUp = ({signUp, setSignUp, show}) =>{
             <div className="signup-footer">
                 <span onClick={()=> setSignUp(false)}>Cancel</span>
             </div>
+            <TermsConditions showTerms={showTerms} setShowTerms={setShowTerms} />
         </div>
     )
 }

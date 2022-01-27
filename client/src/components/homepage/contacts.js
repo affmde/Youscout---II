@@ -13,6 +13,7 @@ export const Contacts = ()=>{
     const [message, setMessage] = useState({
         name: "",
         email: "",
+        date: "",
         message: ""
     })
 
@@ -24,17 +25,28 @@ export const Contacts = ()=>{
 
     const sendMessage = (e)=>{
         e.preventDefault()
-
+        const date = new Date();
+        const getDate = (date) =>{
+            const newDate = new Date(date)
+            const day = newDate.getDate();
+            const month = newDate.getMonth()+1;
+            const year= newDate.getFullYear();
+            const hour= newDate.getHours();
+            const min= newDate.getMinutes();
+            const sec= newDate.getSeconds();
+            return `${day}-${month}-${year} at ${hour}:${min}:${sec} `
+        }
         Axios.post("/createMessage", {
             name: message.name,
             email: message.email,
+            date: getDate(date),
             message: message.message
         }).then(resp=>{
-            console.Console.log(resp)
             setMessage({
                 name: "",
                 email: "",
-                message: ""
+                date: "",
+                message: "",
             });
         })
         document.getElementById('contacts-form').reset();

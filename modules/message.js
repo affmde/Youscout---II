@@ -7,6 +7,9 @@ const messageReportSchema = new mongoose.Schema({
     email:{
         type: String,
     },
+    date:{
+        type: String,
+    },
     message:{
         type: String
     }

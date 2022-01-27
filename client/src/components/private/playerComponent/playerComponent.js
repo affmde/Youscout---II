@@ -15,7 +15,8 @@ export const PlayerComponent = ({report, reports, setReports, getPlayerReportFor
         const day = newDate.getDate();
         const month = newDate.getMonth();
         const year= newDate.getFullYear();
-        return `${day} - ${month} - ${year} `
+        
+        return `${day} - ${month} - ${year}`
     }
 
     const deletePlayerReport = (id) =>{

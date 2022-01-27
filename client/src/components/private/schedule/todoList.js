@@ -30,7 +30,7 @@ export const TodoList = ()=>{
             console.log(res)
         })
         return()=> cancel=true
-    },[info._id]);
+    },[info._id], [info.length]);
 
     const editable = async (id)=>{
         await Axios.get(`https://youscout-tryout.herokuapp.com/getToDos/${id}`).then(response=> {

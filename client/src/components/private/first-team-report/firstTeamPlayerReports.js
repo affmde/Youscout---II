@@ -14,7 +14,7 @@ export const FirstTeamPlayerReports = ({getPlayerReportForRoute})=>{
     
     useEffect(()=>{
         let cancel = false;
-            Axios.get("https://youscout-tryout.herokuapp.com/getPlayerReport").then(res =>{
+            Axios.get("/getPlayerReport").then(res =>{
                 if (cancel) return;
                 setReports(res.data)
             })

@@ -1,0 +1,85 @@
+
+.contacts-container{
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: rgba(136, 126, 126, 0.432);
+}
+
+.contacts-info{
+    width: 45%;
+    margin: 20px 10px;
+}
+
+.contacts-message-container{
+    width: 45%;
+    margin: 20px 10px;
+}
+
+.contacts-message-container label{
+    width: 10%;
+}
+
+.contacts-container input, .contacts-container textarea{
+    background-color: #ffffffce;
+    border: none;
+    margin-bottom: 10px;
+}
+.contacts-container input{
+    height: 1.2rem;
+    width: 60%;
+}
+.contacts-container textarea{
+    height: 400px;
+}
+
+.contacts-form-btns{
+    display: flex;
+    justify-content: flex-end;
+}
+.contacts-form-btns button{
+    margin-left: 15px;
+}
+/*contacts info section*/
+
+.contacts-social-networks{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts-social-networks img{
+    height: 50px;
+    margin-right: 20px;
+}
+
+.personal-contacts{
+    margin-bottom: 60px;
+}
+.contacts-flex img, .contacts-flex p{
+height: 32px;
+margin-right: 40px;
+}
+
+.contacts-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#basedIn{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#basedIn > *{
+    margin-right: 40px;
+    margin-top: 0px;
+}
+
+.based-in{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}

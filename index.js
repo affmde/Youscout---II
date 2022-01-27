@@ -5,6 +5,7 @@ const cors = require('cors');
 const UsersModel = require('./modules/users');
 const PlayerReportModel = require('./modules/playerReport');
 const ScheduleModel= require('./modules/schedule');
+const MessageModel= require('./modules/message');
 const jwt= require('jsonwebtoken');
 const path = require("path");
 require("dotenv").config();
@@ -155,6 +156,16 @@ app.patch("/updateToDo/:id", async (req, res, next)=>{
     }catch(error){
         console.log(error.message)
     }
+})
+
+
+//API for messages
+
+app.post("/createMessage", async (req, res)=>{
+    const message= req.body;
+    const newMessage= new MessageModel(message);
+    await newMessage.save();
+    res.json(message);
 })
 
 

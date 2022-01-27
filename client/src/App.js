@@ -15,6 +15,7 @@ import {PlayerReport} from './components/private/playerReport/playerReport';
 import { TodoList } from './components/private/schedule/todoList';
 import { TodoInfo } from './components/private/schedule/todoInfo';
 import Axios from 'axios';
+import { Contacts } from './components/homepage/contacts';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
             <Route path="*" element={<HomepageBody />}></Route>
             <Route path="/home" element={<HomepageBody />}></Route>
             <Route path="/about" element={<About />}></Route>
+            <Route path="/contacts" element={<Contacts />} ></Route>
             <Route path="/signup" element={<SignUp />}></Route>
           </Routes>
           <Footer />

@@ -24,7 +24,7 @@ export const Edit = ({info, setInfo, showEdit,setShowEdit})=>{
 
     const confirmEdit = (e, id)=>{
         e.preventDefault()
-        Axios.patch(`https://youscout-tryout.herokuapp.com/updateToDo/${id}`, {
+        Axios.patch(`/updateToDo/${id}`, {
             homeTeam: info.homeTeam,
             awayTeam: info.awayTeam,
             date: info.date,

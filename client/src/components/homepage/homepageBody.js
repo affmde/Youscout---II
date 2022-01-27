@@ -1,8 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import phoneImage from '../../media/images/body_background_image.png';
 import './homepageBody.css';
 
 export const HomepageBody = () =>{
+
+    const navigate = useNavigate()
+
     return (
         <div className="homepage-body">
             <div className="body-info">
@@ -19,7 +23,7 @@ export const HomepageBody = () =>{
             </div>
             <div className="image-container">
                 <img alt="page" src={phoneImage} id="phone-image"></img>
-                <h5 id="start-now">Start Now</h5>
+                <h5 id="start-now" onClick={()=>navigate('/signup')}>Start Now</h5>
             </div>
             
         </div>

@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import warning from '../../media/images/warning-2-16.png'
 import correctPassword from '../../media/images/correct-password.png';
 import { TermsConditions } from "./terms-conditions";
+import { Footer } from "../homepage/footer";
 
 
 export const SignUp = ({signUp, setSignUp, show}) =>{
@@ -567,6 +568,7 @@ export const SignUp = ({signUp, setSignUp, show}) =>{
                 <span onClick={()=> setSignUp(false)}>Cancel</span>
             </div>
             <TermsConditions showTerms={showTerms} setShowTerms={setShowTerms} />
+            <Footer />
         </div>
     )
 }

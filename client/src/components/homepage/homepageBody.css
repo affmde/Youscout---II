@@ -1,6 +1,6 @@
 .homepage-body{
     display: flex;
-    height: 600px;
+    height: 650px;
     position: relative;
 }
 
@@ -17,7 +17,7 @@
     bottom: 0;
     position: absolute;
     z-index: -1;
-    height: 600px;
+    height: 650px;
     
 }
 
@@ -91,5 +91,6 @@ h1{
 
 #start-now:hover{
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
 }

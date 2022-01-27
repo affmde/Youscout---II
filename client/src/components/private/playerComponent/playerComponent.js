@@ -19,7 +19,7 @@ export const PlayerComponent = ({report, reports, setReports, getPlayerReportFor
     }
 
     const deletePlayerReport = (id) =>{
-        Axios.delete(`http://localhost:3001/deletePlayerReport/${id}`).then(res=>{
+        Axios.delete(`https://youscout-tryout.herokuapp.com/${id}`).then(res=>{
             navigate('/playerReports')
                 });
 

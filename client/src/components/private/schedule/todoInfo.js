@@ -30,7 +30,7 @@ export const TodoInfo = () =>{
     const createTodo = (e)=>{
         e.preventDefault();
         if(!form.homeTeam || !form.awayTeam || !form.location || !form.date)return
-        Axios.post("http://localhost:3001/createToDo", {
+        Axios.post("https://youscout-tryout.herokuapp.com/createToDo", {
             homeTeam: form.homeTeam,
             awayTeam: form.awayTeam,
             date: form.date,

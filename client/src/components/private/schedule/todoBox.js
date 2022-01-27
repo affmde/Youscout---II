@@ -12,7 +12,7 @@ export const ToDoBox = ({todo, editable, setTodoList, todoList})=>{
     const navigate= useNavigate();
 
     const deleteToDo = (id) =>{
-        Axios.delete(`http://localhost:3001/deleteToDo/${id}`).then(res=>{
+        Axios.delete(`https://youscout-tryout.herokuapp.com/deleteToDo/${id}`).then(res=>{
             navigate('/schedule')
                 });
 

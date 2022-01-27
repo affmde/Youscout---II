@@ -24,7 +24,7 @@ export const TodoList = ()=>{
 
     useEffect(()=>{
         let cancel=false;
-        Axios.get("http://localhost:3001/getToDos").then(res=>{
+        Axios.get("https://youscout-tryout.herokuapp.com/getToDos").then(res=>{
             if(cancel)return
             setTodoList(res.data)
             console.log(res)
@@ -33,7 +33,7 @@ export const TodoList = ()=>{
     },[info._id]);
 
     const editable = async (id)=>{
-        await Axios.get(`http://localhost:3001/getToDos/${id}`).then(response=> {
+        await Axios.get(`https://youscout-tryout.herokuapp.com/getToDos/${id}`).then(response=> {
             setInfo(response.data[0])
             console.log(info)
             setShowEdit(true)

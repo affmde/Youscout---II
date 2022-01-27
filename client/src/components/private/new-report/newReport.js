@@ -53,7 +53,7 @@ export const NewReport = ()=>{
     const createReport = (e) =>{
         e.preventDefault();
 
-        Axios.post("http://localhost:3001/createPlayerReport", {
+        Axios.post("https://youscout-tryout.herokuapp.com/createPlayerReport", {
         pictureUrl: report.pictureUrl,
         club: report.club,
         fullName: report.fullName,

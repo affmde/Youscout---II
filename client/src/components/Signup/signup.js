@@ -57,7 +57,7 @@ export const SignUp = ({signUp, setSignUp, show}) =>{
     
     
     const createUser = (e)=>{
-        Axios.post("http://localhost:3001/createUser", {
+        Axios.post("https://youscout-tryout.herokuapp.com/createUser", {
         prefix: form.prefix,
         firstName: form.firstName,
         lastName: form.lastName,

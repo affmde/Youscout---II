@@ -565,7 +565,7 @@ export const SignUp = ({signUp, setSignUp, show}) =>{
                 </form>
             </div>               
             <div className="signup-footer">
-                <span onClick={()=> setSignUp(false)}>Cancel</span>
+                <span onClick={()=> navigate("/home")}>Cancel</span>
             </div>
             <TermsConditions showTerms={showTerms} setShowTerms={setShowTerms} />
             <Footer />

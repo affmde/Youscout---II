@@ -25,7 +25,7 @@ function App() {
   
 
   const getPlayerReportForRoute = (id) =>{
-    Axios.get(`http://localhost:3001/getPlayerReport/${id}`).then(res=>{
+    Axios.get(`/getPlayerReport/${id}`).then(res=>{
         console.log(res.data)
         setPlayerReport(res.data[0])
     })

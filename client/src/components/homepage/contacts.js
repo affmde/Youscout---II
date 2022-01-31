@@ -63,7 +63,7 @@ export const Contacts = ()=>{
                     </div>
                     <div className='contacts-flex'>
                         <img alt="phone number" src={phoneIcon}></img>
-                        <p>+358123456789</p>
+                        <p>+358452534936</p>
                     </div>
                     <div className='based-in'>
                         <h5>Based in:</h5>

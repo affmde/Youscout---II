@@ -48,7 +48,7 @@ export const SignUp = ({signUp, setSignUp, show}) =>{
           document.getElementById('password-register-img').style.display= "block";
         } else {
           document.getElementById('confirm-password-register').style.color = 'red';
-          document.getElementById('confirm-password-register').setCustomValidity('Pass doesnt match');
+          
           setDisableButton(true)
           document.getElementById('password-message').innerHTML="Passwords do not match";
           document.getElementById('wrong-password-message').style.display = "flex";
@@ -60,7 +60,7 @@ export const SignUp = ({signUp, setSignUp, show}) =>{
     
     
     const createUser = (e)=>{
-        Axios.post("https://youscout-tryout.herokuapp.com/createUser", {
+        Axios.post("/createUser", {
         prefix: form.prefix,
         firstName: form.firstName,
         lastName: form.lastName,
@@ -78,7 +78,7 @@ export const SignUp = ({signUp, setSignUp, show}) =>{
         companyCountry:form.companyCountry,
         }).then(res =>{
             alert("User Created");
-            navigate("/home")
+            navigate("/")
         })
     }
     

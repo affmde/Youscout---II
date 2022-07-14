@@ -23,7 +23,6 @@ export const Login = ({show, setShow, setIsLoggedIn}) =>{
             password
         }).then(res=>{
             if(cancel)return
-            console.log(res)
             if(res.data.user){
                 setIsLoggedIn(true);
                 setShow(false);

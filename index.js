@@ -8,6 +8,7 @@ const ScheduleModel= require('./modules/schedule');
 const MessageModel= require('./modules/message');
 const jwt= require('jsonwebtoken');
 const path = require("path");
+const bcrypt= require("bcrypt");
 require("dotenv").config();
 
 
@@ -39,12 +40,15 @@ app.get("/getUserId/:username", (req, res)=>{
 })
 
 app.post("/login", async (req, res)=>{
+    
     const user = await UsersModel.findOne({
-        username: req.body.username,
-        password: req.body.password
+        username: req.body.username
     })
 
-    if(user){
+    const correctPassword = await bcrypt.compare(req.body.password, user.password);
+    console.log(correctPassword)
+
+    if(user && correctPassword){
         const token = jwt.sign({ 
             username: user.username
         }, 'signed123456789')
@@ -56,9 +60,16 @@ app.post("/login", async (req, res)=>{
 
 app.post("/createUser", async (req, res)=>{
     const user= req.body;
-    const newUser= new UsersModel(user);
-    await newUser.save();
-    res.json(user);
+    const hashedPassword= await bcrypt.hash(user.password, 10);
+    const hashedConfirmPassword= await bcrypt.hash(user.confirmPassword, 10);
+    const newUser={
+        ...user,
+        password: hashedPassword,
+        confirmPassword: hashedConfirmPassword
+    }
+    const userToSave= new UsersModel(newUser);
+    await userToSave.save();
+    res.json(newUser);
 })
 
 
